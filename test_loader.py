@@ -38,7 +38,7 @@ class TestLoader(unittest.TestCase):
                           f"Expected type to be '{place['type']}' or 'unknown', but got '{result['type']}'.")
 
     def test_invalid_location(self):
-        """Invalid location should return NaN values in the DataFrame."""
+        """Invalid location should return NaN values"""
         geolocator = get_geolocator()
         locations = ["asdfqwer1234"]
         df = build_geo_dataframe(geolocator, locations)
